@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_scan"
+            android:title="Scan Tomato"/>
+
+        <item
+            android:id="@+id/nav_severity"
+            android:icon="@drawable/ic_severity"
+            android:title="Severity Calculator"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="About Us"/>
+    </group>
+    <group
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_reference"
+            android:icon="@drawable/ic_references"
+            android:title="References"/>
+    </group>
+</menu>

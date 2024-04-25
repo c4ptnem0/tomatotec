@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/card_bg"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/severityBtnCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnostic Test"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/ic_identify" />
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/home_ins_definition1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="How to diagnose if your tomato is infected or not?"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:padding="5sp"
+                                android:textStyle="normal"
+                                android:layout_marginTop="12dp"
+                                android:justificationMode="inter_word"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_next"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_gravity="bottom|end"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Severity Calculator"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"/>
+
+            <TextView
+                android:id="@+id/aboutDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/severity_severe_calculator_def"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="5dp"
+                android:justificationMode="inter_word"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/bacterial_wilt_scoring"/>
+
+
+            <TextView
+                android:id="@+id/aboutDef1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/aboutDef2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/aboutDef3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/aboutDef4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/aboutDef5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/clearAllBtnTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear All "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                app:drawableEndCompat="@drawable/ic_clearall"
+                android:visibility="gone"/>
+
+            <!--  1 - HR  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High Resistance (HR)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageMinus1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_minus"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_severity_bg">
+
+                    <TextView
+                        android:id="@+id/HRCountTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 - HR"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageAdd1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+            </LinearLayout>
+
+            <!--  2 - R  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resistance (R)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageMinus2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_minus"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_severity_bg">
+
+                    <TextView
+                        android:id="@+id/RCountTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2 - R"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageAdd2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+            </LinearLayout>
+
+            <!--  3 - MR  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Moderate Resistance (MR)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageMinus3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_minus"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_severity_bg">
+
+                    <TextView
+                        android:id="@+id/MRCountTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3 - MR"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageAdd3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+            </LinearLayout>
+
+            <!--  4 - SP  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Susceptible (SP)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageMinus4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_minus"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_severity_bg">
+
+                    <TextView
+                        android:id="@+id/SPCountTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4 - SP"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageAdd4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+            </LinearLayout>
+
+            <!--  5 - HS  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High Susceptible (HS)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageMinus5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_minus"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_severity_bg">
+
+                    <TextView
+                        android:id="@+id/HSCountTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5 - HS"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageAdd5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/severity_round_bg_icon"/>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/calculateBtnCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/greeen"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Calculate!"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

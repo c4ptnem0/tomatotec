@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:argType="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/white"
+        app:elevation="6dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title=" ">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bacterial Ooze Test"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="220dp"
+        app:show_subtitle_button="true"
+        argType:fastforward_increment="15000"
+        argType:resize_mode="fixed_width"
+        argType:rewind_increment="15000"
+        argType:show_buffering="when_playing"
+        argType:show_fastforward_button="true"
+        argType:show_next_button="false"
+        argType:show_previous_button="false"
+        argType:show_rewind_button="true"
+        argType:show_subtitle_button="true"
+        argType:use_artwork="true"
+        argType:use_controller="true"
+        argType:use_sensor_rotation="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Needed:"
+        android:textColor="@color/greeen"
+        android:background="@drawable/rounded_gray_textbg"
+        android:padding="3dp"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/materials1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Transparent glass"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/materials2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Sterile or pure water"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/materials3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Sterile or pure water"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/materials4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Secateurs or knife"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/materials5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Tomato stem sample"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Procedure:"
+        android:textColor="@color/greeen"
+        android:background="@drawable/rounded_gray_textbg"
+        android:padding="3dp"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/Procedure1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 1: Cut a piece of the wilting tomato plant using a clean secateurs or knife."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/Procedure2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 2: Dip the cut piece into a transparent glass with a sterile or pure water."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/Procedure3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 3: Observe the sample and wait for few minutes."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/Procedure4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 4: If the cut piece of stem produces a slimy, whitish-fluid drips or oozes out of the cut section, this indicates that the sample is infected with Bacterial Wilt."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/Procedure5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 5: Document and jot down the results for each sample, if you want to calculate the severity of the infection and get a management advice, use the Severity Calculator."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/Procedure6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 6: Properly Dispose the samples in the trash to avoid contamination."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="40dp"
+        android:justificationMode="inter_word"/>
+
+</LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
+
+
+
+
